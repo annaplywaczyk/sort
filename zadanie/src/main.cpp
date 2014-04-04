@@ -8,7 +8,7 @@ using namespace std;
 /*!
  * \file
  * \brief Funkcja glowna ktorej glownym zalozeniem jest wczytanie plikow z rozna wielkoscia
- * elementow znajdujacych siê w pliku, obliczenie sredniej wartosci czasu, w jakim zostaje wykonany
+ * elementow znajdujacych siï¿½ w pliku, obliczenie sredniej wartosci czasu, w jakim zostaje wykonany
  * algorytm (w naszym przypadku pomnozenie przez 2),nastepnie program porownuje poprawnosc wykoannia
  * mnozenia z plikiem sprawdzajacym.
  * Uzytkownik musi w programie zdefiniowac: liczbe powtorzen (zmienna j), ilosc plikow -
@@ -16,45 +16,6 @@ using namespace std;
  * \return (brak)
  */
 
-/*
-
-int podziel(int p, int k, dane *tab){
-	int piwot=(*tab)[k];// jako piwot przyjmujemy ostatni element zbioru
-	int i=p;
-	int j=k-1;
-
-	while (true){
-		while ((*tab)[j] > piwot) // dopoki elementy sa wieksze od piwotu
-			j--;
-		while ((*tab)[i] < piwot) // dopoki elementy sa mniejsze od piwotu
-			i++;
-		//w tym momencie indeks 'i' wskazuje na pierwsza liczbe wieksza od piwotu
-		//natomiast indeks 'j' pierwsza od konca mniejsza od piwotu
-		if (i < j){
-			tab->zamien_element(i,j);// zamieniamy te liczby
-			i++;
-			j--;
-		}
-		// gdy 'i' i 'j' sie "spotkaja" oznacza to tyle ze na lewo wlacznie od 'j' sa liczby mniejsze od piwotu
-		// a na prawo wieksze
-		else{
-			tab->zamien_element(k,j+1); // ustawiamy piwot pomiedzy tymi zbiorami
-			return j; // zwracamy indeks podzialu
-		}
-	}
-
-}
-
-dane Quicksort(int p, int k, dane tab){
-	int podzial;
-	if (p < k)
-	{
-		podzial = podziel(p,k, &tab);
-		tab=Quicksort( p, podzial,tab);
-		tab=Quicksort( podzial+1, k,tab);
-	}
-	return tab;
-}*/
 
 int main()
 
