@@ -1,0 +1,71 @@
+\begin{theindex}
+
+  \item {Czy\-\_\-\-Pusta}
+    \subitem {Tab\-\_\-\-Asocjacyjna}, 7
+
+  \indexspace
+
+  \item {dodaj}
+    \subitem {Tab\-\_\-\-Asocjacyjna}, 7
+  \item {Drugi\-\_\-\-Elem}
+    \subitem {Liczby}, 5, 6
+
+  \indexspace
+
+  \item {inc/tasocjacyjna.\-hh}, 9
+
+  \indexspace
+
+  \item {Liczby}
+    \subitem {Drugi\-\_\-\-Elem}, 5, 6
+    \subitem {Pierwszy\-\_\-\-Elem}, 6
+  \item {Liczby$<$ Wartosc $>$}, 5
+
+  \indexspace
+
+  \item {operator$<$}
+    \subitem {tasocjacyjna.\-hh}, 10
+  \item {operator[]}
+    \subitem {Tab\-\_\-\-Asocjacyjna}, 7
+
+  \indexspace
+
+  \item {Pierwszy\-\_\-\-Elem}
+    \subitem {Liczby}, 6
+  \item {pobierz}
+    \subitem {Tab\-\_\-\-Asocjacyjna}, 8
+
+  \indexspace
+
+  \item {rozmiar}
+    \subitem {Tab\-\_\-\-Asocjacyjna}, 8
+
+  \indexspace
+
+  \item {src/main.\-cpp}, 10
+
+  \indexspace
+
+  \item {Tab\-\_\-\-Asocjacyjna}
+    \subitem {Czy\-\_\-\-Pusta}, 7
+    \subitem {dodaj}, 7
+    \subitem {operator[]}, 7
+    \subitem {pobierz}, 8
+    \subitem {rozmiar}, 8
+    \subitem {usun}, 8
+    \subitem {znajdz}, 8
+  \item {Tab\-\_\-\-Asocjacyjna$<$ Wartosc $>$}, 6
+  \item {tasocjacyjna.\-hh}
+    \subitem {operator$<$}, 10
+
+  \indexspace
+
+  \item {usun}
+    \subitem {Tab\-\_\-\-Asocjacyjna}, 8
+
+  \indexspace
+
+  \item {znajdz}
+    \subitem {Tab\-\_\-\-Asocjacyjna}, 8
+
+\end{theindex}

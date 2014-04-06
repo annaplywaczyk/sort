@@ -1,0 +1,170 @@
+\section{Tab\-\_\-\-Asocjacyjna$<$ Wartosc $>$ Class Template Reference}
+\label{class_tab___asocjacyjna}\index{Tab\-\_\-\-Asocjacyjna$<$ Wartosc $>$@{Tab\-\_\-\-Asocjacyjna$<$ Wartosc $>$}}
+
+
+Klasa \doxyref{Tab\-\_\-\-Asocjacyjna}{p.}{class_tab___asocjacyjna}, to w niej tworzony jest wektor, w ktorym przechowywane sa wszystkie elementy. Indeksami tego wektora sa Klucze (string), ktorym odpowiadaja wartosci w zaleznosci jaka uzytkownik zdefiniuje zmienna. Znajduja sie tez rowniez rozne funkcje(metody), ktore moga zostac uzyte przy wykorzystywaniu tablicy asocjacyjnej.  
+
+
+
+
+{\ttfamily \#include $<$tasocjacyjna.\-hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Tab\-\_\-\-Asocjacyjna} ()\label{class_tab___asocjacyjna_a7121e8f1198f03b9808a4cbaae31f6d9}
+
+\begin{DoxyCompactList}\small\item\em Konstruktor \doxyref{Tab\-\_\-\-Asocjacyjna}{p.}{class_tab___asocjacyjna}, w kotrym definiowana jest liczba elementow znjadujacych sie w tablicy przy inicjacjowaniu, a wiec wartosc ta wynosi 0. \end{DoxyCompactList}\item 
+void {\bf dodaj} (string Pierwszy\-\_\-\-Elem, Wartosc Drugi\-\_\-\-Elem)
+\begin{DoxyCompactList}\small\item\em Funkcja dodajaca element do tablicy Funkcja dodaje kolejne elementy do tablicy asocjacyjnej badz zmienia wartosci juz istniejcych elementow, jezeli takie istnieja w niej. \end{DoxyCompactList}\item 
+Wartosc {\bf pobierz} (string Pierwszy\-\_\-\-Elem)
+\begin{DoxyCompactList}\small\item\em Funkcja pobieraca elemnt z tablicy. Funkcja pobiera wartosc, ktora znajduje sie pod wskazanym kluczem. \end{DoxyCompactList}\item 
+void {\bf usun} (string Pierwszy\-\_\-\-Elem)
+\begin{DoxyCompactList}\small\item\em Usuwanie wskazanego elementu Funkcja usuwa element o wskazanym kluczu, czyli indeksie tablicy asocjacyjnej. \end{DoxyCompactList}\item 
+string {\bf znajdz} (Wartosc Drugi\-\_\-\-Elem)
+\begin{DoxyCompactList}\small\item\em Znajdowanie Klucza o podanej jego wartosci. Funkcja znajduje Klucz, ktorego elementem jest szukana wartosc. Funkcja dziala podobnie jak funkcja pobierz, tylko zamiast wartosci znajduje klucz. \end{DoxyCompactList}\item 
+int {\bf rozmiar} ()
+\begin{DoxyCompactList}\small\item\em Sprawdzanie rozmiaru tablicy. \end{DoxyCompactList}\item 
+bool {\bf Czy\-\_\-\-Pusta} ()
+\begin{DoxyCompactList}\small\item\em Funkcja sprawdzajaca czy tablica jest pusta. \end{DoxyCompactList}\item 
+Wartosc \& {\bf operator[$\,$]} (string Pierwszy\-\_\-\-Elem)
+\begin{DoxyCompactList}\small\item\em Przeciazenie operatora [] Przeciazenie operatora za pomoca ktorego mozemy odwolywac sie do wskazanego elementu tablicy asocjacyjnej. Wartosc wektora przy uzyciu przeciazenia przyjmuje nam typ Wartosc, ktory uzytkownik definiuje. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Wartosc$>$class Tab\-\_\-\-Asocjacyjna$<$ Wartosc $>$}
+
+Klasa \doxyref{Tab\-\_\-\-Asocjacyjna}{p.}{class_tab___asocjacyjna}, to w niej tworzony jest wektor, w ktorym przechowywane sa wszystkie elementy. Indeksami tego wektora sa Klucze (string), ktorym odpowiadaja wartosci w zaleznosci jaka uzytkownik zdefiniuje zmienna. Znajduja sie tez rowniez rozne funkcje(metody), ktore moga zostac uzyte przy wykorzystywaniu tablicy asocjacyjnej. 
+
+\subsection{Member Function Documentation}
+\index{Tab\-\_\-\-Asocjacyjna@{Tab\-\_\-\-Asocjacyjna}!Czy\-\_\-\-Pusta@{Czy\-\_\-\-Pusta}}
+\index{Czy\-\_\-\-Pusta@{Czy\-\_\-\-Pusta}!Tab_Asocjacyjna@{Tab\-\_\-\-Asocjacyjna}}
+\subsubsection[{Czy\-\_\-\-Pusta}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Wartosc $>$ bool {\bf Tab\-\_\-\-Asocjacyjna}$<$ Wartosc $>$\-::Czy\-\_\-\-Pusta (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_tab___asocjacyjna_a0db9e01b34aea2a7bcf346f892c3b7e3}
+
+
+Funkcja sprawdzajaca czy tablica jest pusta. 
+
+\begin{DoxyReturn}{Returns}
+Jezeli funkcja jest pusta funkcja zwraca nam true w przciwnym wypadku flase. 
+\end{DoxyReturn}
+\index{Tab\-\_\-\-Asocjacyjna@{Tab\-\_\-\-Asocjacyjna}!dodaj@{dodaj}}
+\index{dodaj@{dodaj}!Tab_Asocjacyjna@{Tab\-\_\-\-Asocjacyjna}}
+\subsubsection[{dodaj}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Wartosc $>$ void {\bf Tab\-\_\-\-Asocjacyjna}$<$ Wartosc $>$\-::dodaj (
+\begin{DoxyParamCaption}
+\item[{string}]{Pierwszy\-\_\-\-Elem, }
+\item[{Wartosc}]{Drugi\-\_\-\-Elem}
+\end{DoxyParamCaption}
+)}\label{class_tab___asocjacyjna_a7592f307dc6285a7e00a9ad8ddcebd2f}
+
+
+Funkcja dodajaca element do tablicy Funkcja dodaje kolejne elementy do tablicy asocjacyjnej badz zmienia wartosci juz istniejcych elementow, jezeli takie istnieja w niej. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Pierwszy\-\_\-\-Elem} & -\/ jest to Klucz czyli indeks tablicy \\
+\hline
+\mbox{\tt in}  & {\em Drugi\-\_\-\-Elem} & -\/ zmienna ta jest wartosc klucza, moze przyjmowac rozne typy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(brak) 
+\end{DoxyReturn}
+\index{Tab\-\_\-\-Asocjacyjna@{Tab\-\_\-\-Asocjacyjna}!operator[$\,$]@{operator[]}}
+\index{operator[$\,$]@{operator[]}!Tab_Asocjacyjna@{Tab\-\_\-\-Asocjacyjna}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Wartosc $>$ Wartosc \& {\bf Tab\-\_\-\-Asocjacyjna}$<$ Wartosc $>$\-::operator[$\,$] (
+\begin{DoxyParamCaption}
+\item[{string}]{Pierwszy\-\_\-\-Elem}
+\end{DoxyParamCaption}
+)}\label{class_tab___asocjacyjna_a497f4df14b20891497697b52d6a35b1e}
+
+
+Przeciazenie operatora [] Przeciazenie operatora za pomoca ktorego mozemy odwolywac sie do wskazanego elementu tablicy asocjacyjnej. Wartosc wektora przy uzyciu przeciazenia przyjmuje nam typ Wartosc, ktory uzytkownik definiuje. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Pierwszy\-\_\-\-Elem} & -\/ jest to klucz naszej tablicy, czyli string. To dzieki niemu mamy dostep do wartosci klucza. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Przeciazenie zwraca wartosc do elemntu znajdujacego sie o poadanym kluczu. 
+\end{DoxyReturn}
+\index{Tab\-\_\-\-Asocjacyjna@{Tab\-\_\-\-Asocjacyjna}!pobierz@{pobierz}}
+\index{pobierz@{pobierz}!Tab_Asocjacyjna@{Tab\-\_\-\-Asocjacyjna}}
+\subsubsection[{pobierz}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Wartosc $>$ Wartosc {\bf Tab\-\_\-\-Asocjacyjna}$<$ Wartosc $>$\-::pobierz (
+\begin{DoxyParamCaption}
+\item[{string}]{Pierwszy\-\_\-\-Elem}
+\end{DoxyParamCaption}
+)}\label{class_tab___asocjacyjna_a024c58b4b4a7b3d11d8abee697505038}
+
+
+Funkcja pobieraca elemnt z tablicy. Funkcja pobiera wartosc, ktora znajduje sie pod wskazanym kluczem. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Pierwszy\-\_\-\-Elem} & -\/ jest to Klucz wektora, czyli indeks tablicy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Funkcja zwraca wartosc jaka znajduje sie pod wskazanym kluczem, ktora przyjmuje typ zmiennej w zaleznosci od wykorzystania i zdefiniowania przez uzytkownika. 
+\end{DoxyReturn}
+\index{Tab\-\_\-\-Asocjacyjna@{Tab\-\_\-\-Asocjacyjna}!rozmiar@{rozmiar}}
+\index{rozmiar@{rozmiar}!Tab_Asocjacyjna@{Tab\-\_\-\-Asocjacyjna}}
+\subsubsection[{rozmiar}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Wartosc $>$ int {\bf Tab\-\_\-\-Asocjacyjna}$<$ Wartosc $>$\-::rozmiar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_tab___asocjacyjna_a48f0e9f60fb9ff2aaa64150328d2fd60}
+
+
+Sprawdzanie rozmiaru tablicy. 
+
+\begin{DoxyReturn}{Returns}
+Funkcja zwraca liczbe calkowita, ktora jest rozmiarem calej tablicy asocjacyjnej 
+\end{DoxyReturn}
+\index{Tab\-\_\-\-Asocjacyjna@{Tab\-\_\-\-Asocjacyjna}!usun@{usun}}
+\index{usun@{usun}!Tab_Asocjacyjna@{Tab\-\_\-\-Asocjacyjna}}
+\subsubsection[{usun}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Wartosc $>$ void {\bf Tab\-\_\-\-Asocjacyjna}$<$ Wartosc $>$\-::usun (
+\begin{DoxyParamCaption}
+\item[{string}]{Pierwszy\-\_\-\-Elem}
+\end{DoxyParamCaption}
+)}\label{class_tab___asocjacyjna_ad6cd4db8923a8ab341f4452ce32bbce7}
+
+
+Usuwanie wskazanego elementu Funkcja usuwa element o wskazanym kluczu, czyli indeksie tablicy asocjacyjnej. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Pierwszy\-\_\-\-Elem} & -\/ jest to Klucz wektora, czyli indeks tablicy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(brak) 
+\end{DoxyReturn}
+\index{Tab\-\_\-\-Asocjacyjna@{Tab\-\_\-\-Asocjacyjna}!znajdz@{znajdz}}
+\index{znajdz@{znajdz}!Tab_Asocjacyjna@{Tab\-\_\-\-Asocjacyjna}}
+\subsubsection[{znajdz}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Wartosc $>$ string {\bf Tab\-\_\-\-Asocjacyjna}$<$ Wartosc $>$\-::znajdz (
+\begin{DoxyParamCaption}
+\item[{Wartosc}]{Drugi\-\_\-\-Elem}
+\end{DoxyParamCaption}
+)}\label{class_tab___asocjacyjna_a091e8997196553408f700b1523e3c839}
+
+
+Znajdowanie Klucza o podanej jego wartosci. Funkcja znajduje Klucz, ktorego elementem jest szukana wartosc. Funkcja dziala podobnie jak funkcja pobierz, tylko zamiast wartosci znajduje klucz. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Drugi\-\_\-\-Elem} & -\/ do tej wartosci, ktora przyjmuje dolowny typ poszukujemy Klucz \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Funkcja zwraca nazwe klucza, czyli indeks wektora. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+inc/{\bf tasocjacyjna.\-hh}\end{DoxyCompactItemize}

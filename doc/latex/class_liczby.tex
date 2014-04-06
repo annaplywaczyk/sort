@@ -1,0 +1,100 @@
+\section{Liczby$<$ Wartosc $>$ Class Template Reference}
+\label{class_liczby}\index{Liczby$<$ Wartosc $>$@{Liczby$<$ Wartosc $>$}}
+
+
+Klasa ta jest wykorzystana do stworzenia szablonu, czyli aby wartoscia moglabyc dowolna zmienna wykorzystana przez uzytkownika. Docelowo kluczem jest string czyli wartosc indeksujaca tablice. W klasie tej stworzone sa konstruktory i referencje do modyfikowania wartosci oraz odczytu.  
+
+
+
+
+{\ttfamily \#include $<$tasocjacyjna.\-hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Liczby} ()\label{class_liczby_a66f265a1435d71e55a24157add977fde}
+
+\begin{DoxyCompactList}\small\item\em Konstrukor inicjujacy wartosci. \end{DoxyCompactList}\item 
+{\bf Liczby} (const string \&Klucz)\label{class_liczby_a2bc226dc4fcbc07536d8ff79e2f6bd4f}
+
+\begin{DoxyCompactList}\small\item\em Konstrukor inicjujacy wartosci. \end{DoxyCompactList}\item 
+{\bf Liczby} (const string \&Klucz, const Wartosc \&Wart\-\_\-\-Klucza)\label{class_liczby_ac7c4a7ed9d018bb2928d67e36e36008a}
+
+\begin{DoxyCompactList}\small\item\em Konstrukor inicjujacy wartosci. \end{DoxyCompactList}\item 
+string \& {\bf Pierwszy\-\_\-\-Elem} ()
+\begin{DoxyCompactList}\small\item\em Referencja do pola Klucz, dzieki niej mozemy modyfikowac zmienna. \end{DoxyCompactList}\item 
+const string \& {\bf Pierwszy\-\_\-\-Elem} () const 
+\begin{DoxyCompactList}\small\item\em Funkcja umozliwiajaca odczytanie wartosci znajdujacej sie pod zmienna Klucz. \end{DoxyCompactList}\item 
+Wartosc \& {\bf Drugi\-\_\-\-Elem} ()
+\begin{DoxyCompactList}\small\item\em Referencja do pola Wart\-\_\-\-Klucza, dzieki niej mozemy modyfikowac zmienna. \end{DoxyCompactList}\item 
+const Wartosc \& {\bf Drugi\-\_\-\-Elem} () const 
+\begin{DoxyCompactList}\small\item\em Funkcja umozliwiajaca odczytanie wartosci znajdujacej sie pod zmienna Wart\-\_\-\-Klucza. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Wartosc$>$class Liczby$<$ Wartosc $>$}
+
+Klasa ta jest wykorzystana do stworzenia szablonu, czyli aby wartoscia moglabyc dowolna zmienna wykorzystana przez uzytkownika. Docelowo kluczem jest string czyli wartosc indeksujaca tablice. W klasie tej stworzone sa konstruktory i referencje do modyfikowania wartosci oraz odczytu. 
+
+\subsection{Member Function Documentation}
+\index{Liczby@{Liczby}!Drugi\-\_\-\-Elem@{Drugi\-\_\-\-Elem}}
+\index{Drugi\-\_\-\-Elem@{Drugi\-\_\-\-Elem}!Liczby@{Liczby}}
+\subsubsection[{Drugi\-\_\-\-Elem}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Wartosc$>$ Wartosc\& {\bf Liczby}$<$ Wartosc $>$\-::Drugi\-\_\-\-Elem (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_liczby_a58f5e96bd8ff66cbf246a490ba4e34ca}
+
+
+Referencja do pola Wart\-\_\-\-Klucza, dzieki niej mozemy modyfikowac zmienna. 
+
+\begin{DoxyReturn}{Returns}
+Wart\-\_\-\-Klucza -\/ zmienna typu Wartosc(nasz szablon), ktora jest wartosc Klucza. 
+\end{DoxyReturn}
+\index{Liczby@{Liczby}!Drugi\-\_\-\-Elem@{Drugi\-\_\-\-Elem}}
+\index{Drugi\-\_\-\-Elem@{Drugi\-\_\-\-Elem}!Liczby@{Liczby}}
+\subsubsection[{Drugi\-\_\-\-Elem}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Wartosc$>$ const Wartosc\& {\bf Liczby}$<$ Wartosc $>$\-::Drugi\-\_\-\-Elem (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_liczby_a8ce7984e9a18a15ca9c47a1564b54a32}
+
+
+Funkcja umozliwiajaca odczytanie wartosci znajdujacej sie pod zmienna Wart\-\_\-\-Klucza. 
+
+\begin{DoxyReturn}{Returns}
+Wart\-\_\-\-Klucza -\/ zmienna typu Wartosc(nasz szablon), ktora jest wartosc Klucza. 
+\end{DoxyReturn}
+\index{Liczby@{Liczby}!Pierwszy\-\_\-\-Elem@{Pierwszy\-\_\-\-Elem}}
+\index{Pierwszy\-\_\-\-Elem@{Pierwszy\-\_\-\-Elem}!Liczby@{Liczby}}
+\subsubsection[{Pierwszy\-\_\-\-Elem}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Wartosc$>$ string\& {\bf Liczby}$<$ Wartosc $>$\-::Pierwszy\-\_\-\-Elem (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_liczby_a6c046eb65586254d336b298333f1e068}
+
+
+Referencja do pola Klucz, dzieki niej mozemy modyfikowac zmienna. 
+
+\begin{DoxyReturn}{Returns}
+Klucz -\/ string, ktory jest indeksem tablicy 
+\end{DoxyReturn}
+\index{Liczby@{Liczby}!Pierwszy\-\_\-\-Elem@{Pierwszy\-\_\-\-Elem}}
+\index{Pierwszy\-\_\-\-Elem@{Pierwszy\-\_\-\-Elem}!Liczby@{Liczby}}
+\subsubsection[{Pierwszy\-\_\-\-Elem}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Wartosc$>$ const string\& {\bf Liczby}$<$ Wartosc $>$\-::Pierwszy\-\_\-\-Elem (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_liczby_ab58e2322dc98e24a56383bb228cd0b3c}
+
+
+Funkcja umozliwiajaca odczytanie wartosci znajdujacej sie pod zmienna Klucz. 
+
+\begin{DoxyReturn}{Returns}
+Klucz -\/ string, ktory jest indeksem tablicy 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+inc/{\bf tasocjacyjna.\-hh}\end{DoxyCompactItemize}
