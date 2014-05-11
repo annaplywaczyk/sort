@@ -1,4 +1,4 @@
-#include "tasocjacyjna.hh"
+#include "uruchom.hh"
 #include <sstream>
 #include <fstream>
 #include <time.h>
@@ -7,44 +7,76 @@
 
 using namespace std;
 
-/*!
- * \file
- * \brief Funkcja glowna ktorej glownym zalozeniem jest wczytanie plikow z rozna wielkoscia
- * elementow znajdujacych siê w pliku, obliczenie sredniej wartosci czasu, w jakim zostaje wykonany
- * algorytm (w naszym przypadku pomnozenie przez 2),nastepnie program porownuje poprawnosc wykoannia
- * mnozenia z plikiem sprawdzajacym.
- * Uzytkownik musi w programie zdefiniowac: liczbe powtorzen (zmienna j), ilosc plikow -
- * do ilu wykonywane jest mnozenie (zmienna i), nazwy plikow (string czesc_1, i, czesc_2 - wszystko opcjonalnie).
- * \return (brak)
- */
+
 
 /*!
  * \file
+ * \brief
+ * Funkcja zmieniajaca nazwy dla roznych wielkosci problemu, aby za kazdym razem nie
+ * trzeba bylo wczytywac na nowo pliku.
+ * \param[in] i - zmienna wykorzystana aby zdefiniowac jaka wielkosc problemu ma byc sprawdzona w programie.
+ * \return Funkcja zwraca nazwy plikow do wczytania.
+ */
+
+string zmien_nazwy(int i)
+{
+	// zdefiniowane zmienne oraz czesci nazw plikow, ktore sie zmieniac beda;
+			string czesc_1 = "dane";
+			int liczba=i;
+			string czesc_2=".txt";
+			string nazwa_pliku1;
+
+			// konwersja int na string aby nazwa programu mogla sie zmieniac samoczynnie;
+			ostringstream numer;
+			numer << liczba;
+			string element=numer.str();
+
+			//tworzone nazwy plikow
+			return nazwa_pliku1=czesc_1+element+czesc_2;
+}
+
+/*!
+ * \brief
+ * Funkcja otwiera plik do zapisania wnioskow i danych z obliczonym czasem pobierania wartosci
+ * z tablicy asocjacyjnej. W funkcji tej wykorzystane jest rowniez powtorzenie danego problemu,
+ * aby miec usredniony czas.
+ */
+
+void dzialaj()
+{
+	dzialanie tab;
+
+	int a=0, il;
+	ofstream plik("wnioski3.csv");
+	for (il=10; il<1000000; il=il*10)
+	{
+		double suma=0;
+		string nazwa=zmien_nazwy(il);
+		for (a=0; a<10; a++)
+		{
+			tab.wczytaj(nazwa);
+			double czas=tab.stoper();
+			cout << czas << endl;
+			suma+=czas;
+		}
+		cout << suma/10 << endl;
+		//stworzenie pliku i zapisanie do niego danych o testowanym pliku
+
+		plik << il << "," << a <<"," <<suma/10 << endl;
+		plik.flush();
+		tab.czysc();
+	}
+}
+
+/*!
  * \brief
  * Przyklad uzycia i poprawnego dzialania tablicy asocjacyjnej.
  */
 
 int main()
 {
-	Tab_Asocjacyjna<int>  Dane;
 
-	Dane.dodaj("aa",5);
-	Dane.dodaj("av",1);
-	int c=Dane.rozmiar();
-	Dane.dodaj("aa",7);
-	Dane.dodaj("cb",8);
-	Dane.dodaj("ba",6);
-	Dane["ba"]=15;
-	int i = Dane["ba"];
-	cout << i;
-	cout << "roz" << c << endl;
-	int pobrany=Dane.pobierz("aa");
-	Dane.usun("av");
-	c=Dane.rozmiar();
-	string b=Dane.znajdz(7);
-	cout << "b "<< b << endl;
-	cout << "roz" << c << endl;
-	cout << pobrany << endl;
+	dzialaj();
 
 	return 0;
 }

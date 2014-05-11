@@ -176,6 +176,7 @@ public:
 	 */
 	Wartosc & operator [] (string Pierwszy_Elem);
 
+
 };
 
 template <typename Wartosc>
@@ -328,5 +329,8 @@ string Tab_Asocjacyjna<Wartosc>::znajdz(Wartosc Drugi_Elem)
 		iter_p++;
 	}
 }
+
+
+
 
 #endif /* TASOCJACYJNA_HH_ */
