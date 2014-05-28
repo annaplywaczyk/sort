@@ -1,71 +1,132 @@
 \begin{theindex}
 
-  \item {Czy\-\_\-\-Pusta}
-    \subitem {Tab\-\_\-\-Asocjacyjna}, 7
+  \item {$\sim$\-Graf}
+    \subitem {Graf}, 6
 
   \indexspace
 
-  \item {dodaj}
-    \subitem {Tab\-\_\-\-Asocjacyjna}, 7
-  \item {Drugi\-\_\-\-Elem}
-    \subitem {Liczby}, 5, 6
+  \item {a\-\_\-star}
+    \subitem {Graf}, 6
+  \item {akt\-\_\-cel}
+    \subitem {wezel}, 10
 
   \indexspace
 
-  \item {inc/tasocjacyjna.\-hh}, 9
+  \item {B\-F\-S}
+    \subitem {Graf}, 6
 
   \indexspace
 
-  \item {Liczby}
-    \subitem {Drugi\-\_\-\-Elem}, 5, 6
-    \subitem {Pierwszy\-\_\-\-Elem}, 6
-  \item {Liczby$<$ Wartosc $>$}, 5
+  \item {C\-:/\-Users/\-Ania/\-Documents/\-Git\-Hub/sort/inc/graf.\-hh}, 
+		11
+  \item {C\-:/\-Users/\-Ania/\-Documents/\-Git\-Hub/sort/src/graf.\-cpp}, 
+		12
+  \item {C\-:/\-Users/\-Ania/\-Documents/\-Git\-Hub/sort/src/main.\-cpp}, 
+		12
+  \item {czy\-\_\-spojny}
+    \subitem {Graf}, 6
 
   \indexspace
 
-  \item {operator$<$}
-    \subitem {tasocjacyjna.\-hh}, 10
-  \item {operator[]}
-    \subitem {Tab\-\_\-\-Asocjacyjna}, 7
+  \item {D\-F\-S}
+    \subitem {Graf}, 7
 
   \indexspace
 
-  \item {Pierwszy\-\_\-\-Elem}
-    \subitem {Liczby}, 6
-  \item {pobierz}
-    \subitem {Tab\-\_\-\-Asocjacyjna}, 8
+  \item {E}
+    \subitem {Graf}, 7
 
   \indexspace
 
-  \item {rozmiar}
-    \subitem {Tab\-\_\-\-Asocjacyjna}, 8
+  \item {generuj\-\_\-macierz}
+    \subitem {Graf}, 7
+  \item {Graf}, 5
+    \subitem {$\sim$\-Graf}, 6
+    \subitem {a\-\_\-star}, 6
+    \subitem {B\-F\-S}, 6
+    \subitem {czy\-\_\-spojny}, 6
+    \subitem {D\-F\-S}, 7
+    \subitem {E}, 7
+    \subitem {generuj\-\_\-macierz}, 7
+    \subitem {Tablica}, 7
+    \subitem {V}, 7
+    \subitem {wczytaj\-\_\-graf}, 7
+    \subitem {wierzcholek}, 7
+    \subitem {wyswietl}, 7
+  \item {graf.\-hh}
+    \subitem {wezel}, 11
 
   \indexspace
 
-  \item {src/main.\-cpp}, 10
+  \item {heurystyka}
+    \subitem {wezel}, 9
 
   \indexspace
 
-  \item {Tab\-\_\-\-Asocjacyjna}
-    \subitem {Czy\-\_\-\-Pusta}, 7
-    \subitem {dodaj}, 7
-    \subitem {operator[]}, 7
-    \subitem {pobierz}, 8
-    \subitem {rozmiar}, 8
-    \subitem {usun}, 8
-    \subitem {znajdz}, 8
-  \item {Tab\-\_\-\-Asocjacyjna$<$ Wartosc $>$}, 6
-  \item {tasocjacyjna.\-hh}
-    \subitem {operator$<$}, 10
+  \item {koszt}
+    \subitem {wezel}, 10
+  \item {ktory}
+    \subitem {wezel}, 10
 
   \indexspace
 
-  \item {usun}
-    \subitem {Tab\-\_\-\-Asocjacyjna}, 8
+  \item {main}
+    \subitem {main.\-cpp}, 12
+  \item {main.\-cpp}
+    \subitem {main}, 12
 
   \indexspace
 
-  \item {znajdz}
-    \subitem {Tab\-\_\-\-Asocjacyjna}, 8
+  \item {operator()}
+    \subitem {porownanie}, 8
+
+  \indexspace
+
+  \item {porownanie}, 8
+    \subitem {operator()}, 8
+
+  \indexspace
+
+  \item {start\-\_\-akt}
+    \subitem {wezel}, 10
+
+  \indexspace
+
+  \item {Tablica}
+    \subitem {Graf}, 7
+
+  \indexspace
+
+  \item {V}
+    \subitem {Graf}, 7
+
+  \indexspace
+
+  \item {wczytaj\-\_\-graf}
+    \subitem {Graf}, 7
+  \item {wezel}, 8
+    \subitem {akt\-\_\-cel}, 10
+    \subitem {graf.\-hh}, 11
+    \subitem {heurystyka}, 9
+    \subitem {koszt}, 10
+    \subitem {ktory}, 10
+    \subitem {start\-\_\-akt}, 10
+    \subitem {wezel}, 9
+    \subitem {x}, 10
+    \subitem {y}, 10
+  \item {wierzcholek}
+    \subitem {Graf}, 7
+  \item {wyswietl}
+    \subitem {Graf}, 7
+
+  \indexspace
+
+  \item {x}
+    \subitem {wezel}, 10
+
+  \indexspace
+
+  \item {y}
+    \subitem {wezel}, 10
 
 \end{theindex}

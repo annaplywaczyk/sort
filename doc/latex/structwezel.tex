@@ -1,0 +1,123 @@
+\section{wezel Struct Reference}
+\label{structwezel}\index{wezel@{wezel}}
+
+
+Struktura w ktorej definiujemy wezel-\/ wiercholek.  
+
+
+
+
+{\ttfamily \#include $<$graf.\-hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double {\bf heurystyka} ({\bf wezel} cel)
+\begin{DoxyCompactList}\small\item\em Funkcja znajdujaca rozwiazanie, dla ktorej nie ma gwarancji znalezienia metody optymalnej. Sluzy do znajdowania rozwiazan przyblizonych, na podstawie ktorej wyliczany jest ostateczny rezultat. W funkcji znajdujemy droge pomiedzy dwoma wierzcholkami w linii prostej na podstawie twierdzenia Pitagorasa. Kazdy wierzcholek ma wspolrzedne x i y. \end{DoxyCompactList}\item 
+{\bf wezel} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor w ktorym definiujemy poczatowe wartosci wezla aby informacje o wierzcholku nie przyjmowaly nam losowych wartosci. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bf ktory}
+\begin{DoxyCompactList}\small\item\em Numer wierzcho³ka, jego I\-D. \end{DoxyCompactList}\item 
+int {\bf start\-\_\-akt}
+\begin{DoxyCompactList}\small\item\em Droga jak¹ pokona³ algorytm poszukiwania binarnego od pocz¹tku do miejsca w ktorym siê aktulanie znajdujemy. \end{DoxyCompactList}\item 
+double {\bf akt\-\_\-cel}
+\begin{DoxyCompactList}\small\item\em Droga jaka zosta³a do pokonoania. Zmienna wykorzystywana w poszukiwaniu A$\ast$. Do zmiennej przypisujemy heurystyke, ktora wyszukuje nam optymalna droge. \end{DoxyCompactList}\item 
+double {\bf koszt}
+\begin{DoxyCompactList}\small\item\em Suma zmiennych start\-\_\-akt i akt\-\_\-cel, czyli jest to droga jaka prawdopodobnie trzeba pokonac aby przejscz punktu A do punktu B. \end{DoxyCompactList}\item 
+int {\bf x}
+\begin{DoxyCompactList}\small\item\em Wspolrzedna x wierzcholka wykorzystywana w A$\ast$. \end{DoxyCompactList}\item 
+int {\bf y}
+\begin{DoxyCompactList}\small\item\em Wspolrzedna y wierzcholka wykorzystywana w A$\ast$. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Struktura w ktorej definiujemy wezel-\/ wiercholek. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{wezel@{wezel}!wezel@{wezel}}
+\index{wezel@{wezel}!wezel@{wezel}}
+\subsubsection[{wezel}]{\setlength{\rightskip}{0pt plus 5cm}wezel\-::wezel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{structwezel_a9a5a65afefdc04921ab9c2c4fa94b206}
+
+
+Konstruktor w ktorym definiujemy poczatowe wartosci wezla aby informacje o wierzcholku nie przyjmowaly nam losowych wartosci. 
+
+
+
+\subsection{Member Function Documentation}
+\index{wezel@{wezel}!heurystyka@{heurystyka}}
+\index{heurystyka@{heurystyka}!wezel@{wezel}}
+\subsubsection[{heurystyka}]{\setlength{\rightskip}{0pt plus 5cm}double wezel\-::heurystyka (
+\begin{DoxyParamCaption}
+\item[{{\bf wezel}}]{cel}
+\end{DoxyParamCaption}
+)}\label{structwezel_ade6c445e9561061e3f364785b4bc751f}
+
+
+Funkcja znajdujaca rozwiazanie, dla ktorej nie ma gwarancji znalezienia metody optymalnej. Sluzy do znajdowania rozwiazan przyblizonych, na podstawie ktorej wyliczany jest ostateczny rezultat. W funkcji znajdujemy droge pomiedzy dwoma wierzcholkami w linii prostej na podstawie twierdzenia Pitagorasa. Kazdy wierzcholek ma wspolrzedne x i y. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em cel} & -\/ informacje ktore sa zawarte w wierzcholku do ktorego mamy znalezc droge \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Funkcja zwraca liczbe zmiennoprzecinkowa, ktora jest najkrotsza droga z punktu A do B. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{wezel@{wezel}!akt\-\_\-cel@{akt\-\_\-cel}}
+\index{akt\-\_\-cel@{akt\-\_\-cel}!wezel@{wezel}}
+\subsubsection[{akt\-\_\-cel}]{\setlength{\rightskip}{0pt plus 5cm}double wezel\-::akt\-\_\-cel}\label{structwezel_abe0f5552631a5fa0c87d6534dd0a60ad}
+
+
+Droga jaka zosta³a do pokonoania. Zmienna wykorzystywana w poszukiwaniu A$\ast$. Do zmiennej przypisujemy heurystyke, ktora wyszukuje nam optymalna droge. 
+
+\index{wezel@{wezel}!koszt@{koszt}}
+\index{koszt@{koszt}!wezel@{wezel}}
+\subsubsection[{koszt}]{\setlength{\rightskip}{0pt plus 5cm}double wezel\-::koszt}\label{structwezel_af30e7c726b8f8e36df471170c601f20b}
+
+
+Suma zmiennych start\-\_\-akt i akt\-\_\-cel, czyli jest to droga jaka prawdopodobnie trzeba pokonac aby przejscz punktu A do punktu B. 
+
+\index{wezel@{wezel}!ktory@{ktory}}
+\index{ktory@{ktory}!wezel@{wezel}}
+\subsubsection[{ktory}]{\setlength{\rightskip}{0pt plus 5cm}int wezel\-::ktory}\label{structwezel_a8855655462954b82f87cb88274586225}
+
+
+Numer wierzcho³ka, jego I\-D. 
+
+\index{wezel@{wezel}!start\-\_\-akt@{start\-\_\-akt}}
+\index{start\-\_\-akt@{start\-\_\-akt}!wezel@{wezel}}
+\subsubsection[{start\-\_\-akt}]{\setlength{\rightskip}{0pt plus 5cm}int wezel\-::start\-\_\-akt}\label{structwezel_a6feccde23c4eb223e39c5c917cb6b8ed}
+
+
+Droga jak¹ pokona³ algorytm poszukiwania binarnego od pocz¹tku do miejsca w ktorym siê aktulanie znajdujemy. 
+
+\index{wezel@{wezel}!x@{x}}
+\index{x@{x}!wezel@{wezel}}
+\subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}int wezel\-::x}\label{structwezel_a9ff81d4004b32ec14a55827110ee1be5}
+
+
+Wspolrzedna x wierzcholka wykorzystywana w A$\ast$. 
+
+\index{wezel@{wezel}!y@{y}}
+\index{y@{y}!wezel@{wezel}}
+\subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}int wezel\-::y}\label{structwezel_a4f7847e86e1cea11d547b508d2dc4f04}
+
+
+Wspolrzedna y wierzcholka wykorzystywana w A$\ast$. 
+
+
+
+The documentation for this struct was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Ania/\-Documents/\-Git\-Hub/sort/inc/{\bf graf.\-hh}\item 
+C\-:/\-Users/\-Ania/\-Documents/\-Git\-Hub/sort/src/{\bf graf.\-cpp}\end{DoxyCompactItemize}

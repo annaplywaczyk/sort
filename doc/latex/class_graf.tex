@@ -1,0 +1,207 @@
+\section{Graf Class Reference}
+\label{class_graf}\index{Graf@{Graf}}
+
+
+Klasa graf w ktorej zdefiniowane sa wszystkie parametry i funkcje zwiazane z operacjami przeprowadzanymi na nim.  
+
+
+
+
+{\ttfamily \#include $<$graf.\-hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf generuj\-\_\-macierz} (int ilosc, int gestosc)
+\item 
+bool {\bf czy\-\_\-spojny} ()
+\item 
+void {\bf wyswietl} ()
+\begin{DoxyCompactList}\small\item\em Funkcja wyswietla graf wczytany z pliku, a dokladnie wyswietla jego macierz sasiedztwa. \end{DoxyCompactList}\item 
+void {\bf wczytaj\-\_\-graf} (string nazwa\-\_\-pliku)
+\begin{DoxyCompactList}\small\item\em Funkcja wczytuje graf z pliku (jego macierz sasiedztwa) i zapisuje do pamieci abysmy mogli nastepnie uzywac. \end{DoxyCompactList}\item 
+int {\bf B\-F\-S} (int pocz, int koniec)
+\begin{DoxyCompactList}\small\item\em B\-S\-T -\/ Breadth-\/first search Funkcja przeszukiwania grafu wszerz. Przechodzenie grafu rozpoczyna sie od zadanego wierzcholka i polega na odwiedzeniu wszystkich osiagalnych z niego wierzcholkow w celu odnalezienia drogi do drugiego wierzcholka. Funkcja dziala na macierzy sasiedztwa. \end{DoxyCompactList}\item 
+int {\bf D\-F\-S} (int pocz, int koniec)
+\begin{DoxyCompactList}\small\item\em D\-S\-T -\/ Depth-\/first search Funkcja przeszukiwania grafu w glab. Przechodzenie grafu rozpoczyna sie od zadanego wierzcholka i polega na badaniu wszystkich krawedzi wychodzacych z podanego wierzcholka. Po zbadaniu wszystkich krawedzi wychodzacych z danego wierzcholka algorytm poawraca do wierzcholka, z ktorego dany wierzcholek zostal odiwedzony. Funkcja uzyta w celu odnalezienia drogi do drugiego wierzcholka. Funkcja dziala na macierzy sasiedztwa. \end{DoxyCompactList}\item 
+int {\bf a\-\_\-star} (int pocz, int koniec)
+\begin{DoxyCompactList}\small\item\em A$\ast$ -\/ A star Algorytm heurystyczny sluzacy do odnalezienia najkrotszej sciezki w grafie. Algorytm jest zupelny i optymalny, znajduje sciezke jezeli tylko taka istnieje i przy tym najkrtosza sciezke. Algorytm A$\ast$ od poczatku tworzy sciezke, za kazdym razem wybierajac wierzcholek x z dostepnych w danym kroku niezbadanych wierzcholkow tak aby minimalizowac funkcje f(x) -\/ zmienna koszt. Funkcja ta nigdy nie przeoczy sciezki o nizszym koszcie, dlatego wyszukuje najkrotsza droge sposrod trzech przeszukiwan w moim programie (B\-F\-S, D\-F\-S, A$\ast$). \end{DoxyCompactList}\item 
+{\bf $\sim$\-Graf} ()
+\begin{DoxyCompactList}\small\item\em Dekonstruktor klasy \doxyref{Graf}{p.}{class_graf}. Gdy zakonczymy dzialanie tej klasie pamiec zostaje zwolniona. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int $\ast$$\ast$ {\bf Tablica}
+\begin{DoxyCompactList}\small\item\em Tablica, ktora jest macierza sasiedztwa. \end{DoxyCompactList}\item 
+int {\bf V}
+\begin{DoxyCompactList}\small\item\em Zmienna wykorzystywana do przechowywania liczby wierzcholkow w grafie. \end{DoxyCompactList}\item 
+int {\bf E}
+\begin{DoxyCompactList}\small\item\em Zmienna wykorzystywana do przechowywania liczby krawedzi uzytych w grafie. \end{DoxyCompactList}\item 
+{\bf wezel} $\ast$ {\bf wierzcholek}
+\begin{DoxyCompactList}\small\item\em Lista wierzcholkow. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Klasa graf w ktorej zdefiniowane sa wszystkie parametry i funkcje zwiazane z operacjami przeprowadzanymi na nim. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Graf@{Graf}!$\sim$\-Graf@{$\sim$\-Graf}}
+\index{$\sim$\-Graf@{$\sim$\-Graf}!Graf@{Graf}}
+\subsubsection[{$\sim$\-Graf}]{\setlength{\rightskip}{0pt plus 5cm}Graf\-::$\sim$\-Graf (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_graf_a4ff3904fd04f367ac0219b52719c567e}
+
+
+Dekonstruktor klasy \doxyref{Graf}{p.}{class_graf}. Gdy zakonczymy dzialanie tej klasie pamiec zostaje zwolniona. 
+
+
+
+\subsection{Member Function Documentation}
+\index{Graf@{Graf}!a\-\_\-star@{a\-\_\-star}}
+\index{a\-\_\-star@{a\-\_\-star}!Graf@{Graf}}
+\subsubsection[{a\-\_\-star}]{\setlength{\rightskip}{0pt plus 5cm}int Graf\-::a\-\_\-star (
+\begin{DoxyParamCaption}
+\item[{int}]{pocz, }
+\item[{int}]{koniec}
+\end{DoxyParamCaption}
+)}\label{class_graf_a9e195083b97bf743e1b46954497c5ee7}
+
+
+A$\ast$ -\/ A star Algorytm heurystyczny sluzacy do odnalezienia najkrotszej sciezki w grafie. Algorytm jest zupelny i optymalny, znajduje sciezke jezeli tylko taka istnieje i przy tym najkrtosza sciezke. Algorytm A$\ast$ od poczatku tworzy sciezke, za kazdym razem wybierajac wierzcholek x z dostepnych w danym kroku niezbadanych wierzcholkow tak aby minimalizowac funkcje f(x) -\/ zmienna koszt. Funkcja ta nigdy nie przeoczy sciezki o nizszym koszcie, dlatego wyszukuje najkrotsza droge sposrod trzech przeszukiwan w moim programie (B\-F\-S, D\-F\-S, A$\ast$). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pocz} & -\/ punkt poczatkowy do znalezienia drogi w grafie \\
+\hline
+\mbox{\tt in}  & {\em koniec} & -\/ punkt koncowy do znalezienia drogi w grafie \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Dzieki funkcji otrzymac mozemy dlugosc (koszt) drogi z punkty A do B. 
+\end{DoxyReturn}
+\index{Graf@{Graf}!B\-F\-S@{B\-F\-S}}
+\index{B\-F\-S@{B\-F\-S}!Graf@{Graf}}
+\subsubsection[{B\-F\-S}]{\setlength{\rightskip}{0pt plus 5cm}int Graf\-::\-B\-F\-S (
+\begin{DoxyParamCaption}
+\item[{int}]{pocz, }
+\item[{int}]{koniec}
+\end{DoxyParamCaption}
+)}\label{class_graf_a105a5d42452e6c83efe4f3e6442aba00}
+
+
+B\-S\-T -\/ Breadth-\/first search Funkcja przeszukiwania grafu wszerz. Przechodzenie grafu rozpoczyna sie od zadanego wierzcholka i polega na odwiedzeniu wszystkich osiagalnych z niego wierzcholkow w celu odnalezienia drogi do drugiego wierzcholka. Funkcja dziala na macierzy sasiedztwa. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pocz} & -\/ punkt poczatkowy do znalezienia drogi w grafie \\
+\hline
+\mbox{\tt in}  & {\em koniec} & -\/ punkt koncowy do znalezienia drogi w grafie \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Dzieki funkcji otrzymac mozemy dlugosc (koszt) drogi z punkty A do B. 
+\end{DoxyReturn}
+\index{Graf@{Graf}!czy\-\_\-spojny@{czy\-\_\-spojny}}
+\index{czy\-\_\-spojny@{czy\-\_\-spojny}!Graf@{Graf}}
+\subsubsection[{czy\-\_\-spojny}]{\setlength{\rightskip}{0pt plus 5cm}bool Graf\-::czy\-\_\-spojny (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_graf_ad83cd4b8656ccb75bd7b5f6cfe779080}
+\index{Graf@{Graf}!D\-F\-S@{D\-F\-S}}
+\index{D\-F\-S@{D\-F\-S}!Graf@{Graf}}
+\subsubsection[{D\-F\-S}]{\setlength{\rightskip}{0pt plus 5cm}int Graf\-::\-D\-F\-S (
+\begin{DoxyParamCaption}
+\item[{int}]{pocz, }
+\item[{int}]{koniec}
+\end{DoxyParamCaption}
+)}\label{class_graf_a7f9c66fb93992fb7ad865d19f74f575c}
+
+
+D\-S\-T -\/ Depth-\/first search Funkcja przeszukiwania grafu w glab. Przechodzenie grafu rozpoczyna sie od zadanego wierzcholka i polega na badaniu wszystkich krawedzi wychodzacych z podanego wierzcholka. Po zbadaniu wszystkich krawedzi wychodzacych z danego wierzcholka algorytm poawraca do wierzcholka, z ktorego dany wierzcholek zostal odiwedzony. Funkcja uzyta w celu odnalezienia drogi do drugiego wierzcholka. Funkcja dziala na macierzy sasiedztwa. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pocz} & -\/ punkt poczatkowy do znalezienia drogi w grafie \\
+\hline
+\mbox{\tt in}  & {\em koniec} & -\/ punkt koncowy do znalezienia drogi w grafie \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Dzieki funkcji otrzymac mozemy dlugosc (koszt) drogi z punkty A do B. 
+\end{DoxyReturn}
+\index{Graf@{Graf}!generuj\-\_\-macierz@{generuj\-\_\-macierz}}
+\index{generuj\-\_\-macierz@{generuj\-\_\-macierz}!Graf@{Graf}}
+\subsubsection[{generuj\-\_\-macierz}]{\setlength{\rightskip}{0pt plus 5cm}void Graf\-::generuj\-\_\-macierz (
+\begin{DoxyParamCaption}
+\item[{int}]{ilosc, }
+\item[{int}]{gestosc}
+\end{DoxyParamCaption}
+)}\label{class_graf_a314dc291c1c6d51991ef0f495846991b}
+\index{Graf@{Graf}!wczytaj\-\_\-graf@{wczytaj\-\_\-graf}}
+\index{wczytaj\-\_\-graf@{wczytaj\-\_\-graf}!Graf@{Graf}}
+\subsubsection[{wczytaj\-\_\-graf}]{\setlength{\rightskip}{0pt plus 5cm}void Graf\-::wczytaj\-\_\-graf (
+\begin{DoxyParamCaption}
+\item[{string}]{nazwa\-\_\-pliku}
+\end{DoxyParamCaption}
+)}\label{class_graf_abbdac8601a6e4b65d53c5bbca99fb073}
+
+
+Funkcja wczytuje graf z pliku (jego macierz sasiedztwa) i zapisuje do pamieci abysmy mogli nastepnie uzywac. 
+
+\begin{DoxyReturn}{Returns}
+(brak) 
+\end{DoxyReturn}
+\index{Graf@{Graf}!wyswietl@{wyswietl}}
+\index{wyswietl@{wyswietl}!Graf@{Graf}}
+\subsubsection[{wyswietl}]{\setlength{\rightskip}{0pt plus 5cm}void Graf\-::wyswietl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_graf_a3a084b33cfcfa17bbfc05570043aaab2}
+
+
+Funkcja wyswietla graf wczytany z pliku, a dokladnie wyswietla jego macierz sasiedztwa. 
+
+\begin{DoxyReturn}{Returns}
+(brak) 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Graf@{Graf}!E@{E}}
+\index{E@{E}!Graf@{Graf}}
+\subsubsection[{E}]{\setlength{\rightskip}{0pt plus 5cm}int Graf\-::\-E}\label{class_graf_a30dc3bf4726fbd2d056c98f15080b236}
+
+
+Zmienna wykorzystywana do przechowywania liczby krawedzi uzytych w grafie. 
+
+\index{Graf@{Graf}!Tablica@{Tablica}}
+\index{Tablica@{Tablica}!Graf@{Graf}}
+\subsubsection[{Tablica}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$$\ast$ Graf\-::\-Tablica}\label{class_graf_ab7408342e7720df958101e9a6720c646}
+
+
+Tablica, ktora jest macierza sasiedztwa. 
+
+\index{Graf@{Graf}!V@{V}}
+\index{V@{V}!Graf@{Graf}}
+\subsubsection[{V}]{\setlength{\rightskip}{0pt plus 5cm}int Graf\-::\-V}\label{class_graf_a673185b62d4c232bcbbc0200e95e7481}
+
+
+Zmienna wykorzystywana do przechowywania liczby wierzcholkow w grafie. 
+
+\index{Graf@{Graf}!wierzcholek@{wierzcholek}}
+\index{wierzcholek@{wierzcholek}!Graf@{Graf}}
+\subsubsection[{wierzcholek}]{\setlength{\rightskip}{0pt plus 5cm}{\bf wezel}$\ast$ Graf\-::wierzcholek}\label{class_graf_aeb3644d381b3e2dd4003ac679e07c902}
+
+
+Lista wierzcholkow. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Ania/\-Documents/\-Git\-Hub/sort/inc/{\bf graf.\-hh}\item 
+C\-:/\-Users/\-Ania/\-Documents/\-Git\-Hub/sort/src/{\bf graf.\-cpp}\end{DoxyCompactItemize}

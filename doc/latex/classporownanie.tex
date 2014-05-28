@@ -1,0 +1,49 @@
+\section{porownanie Class Reference}
+\label{classporownanie}\index{porownanie@{porownanie}}
+
+
+Klasa porownanie wykorzystywana do poszukiwania A$\ast$. Sluzaca do definicji kolejki piorytetowej -\/ abstrakcyjnego typu danych sluzacego do przechowywania elemntow zbioru w ustalonym porzadku.  
+
+
+
+
+{\ttfamily \#include $<$graf.\-hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bf operator()} (const {\bf wezel} \&pier, const {\bf wezel} \&drugi) const 
+\begin{DoxyCompactList}\small\item\em Funkcja pomocna do ustalenia porzadku w jakim maja byc przechowywane wierzcholki nieodwiedzone. W naszym przypadku ma byc uporzadkowane wedlug kosztu wierzcholka, czyli wagi rosnaco. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Klasa porownanie wykorzystywana do poszukiwania A$\ast$. Sluzaca do definicji kolejki piorytetowej -\/ abstrakcyjnego typu danych sluzacego do przechowywania elemntow zbioru w ustalonym porzadku. 
+
+\subsection{Member Function Documentation}
+\index{porownanie@{porownanie}!operator()@{operator()}}
+\index{operator()@{operator()}!porownanie@{porownanie}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}bool porownanie\-::operator() (
+\begin{DoxyParamCaption}
+\item[{const {\bf wezel} \&}]{pier, }
+\item[{const {\bf wezel} \&}]{drugi}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classporownanie_a87cd38278a8c1c8888ab0f7a6df6cbed}
+
+
+Funkcja pomocna do ustalenia porzadku w jakim maja byc przechowywane wierzcholki nieodwiedzone. W naszym przypadku ma byc uporzadkowane wedlug kosztu wierzcholka, czyli wagi rosnaco. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pier} & -\/ wezel uzyty do porownywania wag z innym wezelem \\
+\hline
+\mbox{\tt in}  & {\em drugi} & -\/ wezel uzyty do porownywania wag z innym wezelem \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Funkcja zwraca true jezeli waga pier jest wieksza niz drugiego w przciwnym wypadku false. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Ania/\-Documents/\-Git\-Hub/sort/inc/{\bf graf.\-hh}\end{DoxyCompactItemize}
